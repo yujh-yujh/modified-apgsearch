@@ -106,7 +106,7 @@ def hashsoup(instring, sym):
                 x = k + 8*(j % 32)
                 y = int(j / 32)
 
-            elif (sym == '1x256+1'):
+            elif (sym == '1x256x2+1'):
 
                 x = k + 8*(j % 32)
                 y = int(j / 32)
@@ -202,7 +202,7 @@ def hashsoup(instring, sym):
             thesoup.append(thesoup[x+1])
 
     # Checks for rotate2 symmetry:
-    if sym in ['C2_1', 'C4_1', 'D8_1', '1x256+1']:
+    if sym in ['C2_1', 'C4_1', 'D8_1', '1x256x2+1']:
         for x in xrange(0, len(thesoup), 2):
             thesoup.append(-thesoup[x])
             thesoup.append(-thesoup[x+1])
@@ -1628,7 +1628,7 @@ soupinarow = int(g.getstring("How many soups in a row?", "10"))
 # initpos = int(g.getstring("Initial position: ", "0"))
 initpos = 0
 
-if symmstring not in ["8x32", "4x64", "2x128", "1x256", "32x32", "C1", "C2_1", "C2_2", "C2_4", "C4_1", "C4_4", "C4_9", "D2_+1", "D2_+2", "D2_x", "D4_+1", "D4_+2", "D4_+4", "D4_x1", "D4_x4", "D4_x9", "D8_1", "D8_4", "D8_9", "D8_16", "D8_25", "D8_49", "D8_81", "D8_121", "D8_169", "Test1", "1x256_rotate4", "1x256+1"]:
+if symmstring not in ["8x32", "4x64", "2x128", "1x256", "32x32", "C1", "C2_1", "C2_2", "C2_4", "C4_1", "C4_4", "C4_9", "D2_+1", "D2_+2", "D2_x", "D4_+1", "D4_+2", "D4_+4", "D4_x1", "D4_x4", "D4_x9", "D8_1", "D8_4", "D8_9", "D8_16", "D8_25", "D8_49", "D8_81", "D8_121", "D8_169", "Test1", "1x256_rotate4", "1x256x2+1"]:
     g.exit(symmstring+" is not a valid symmetry option")
 soup = Soup()
 soup.rg.setrule(rulestring)
