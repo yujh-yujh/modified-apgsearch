@@ -69,6 +69,7 @@ D8_169
 1x256_rotate4
 
 Test1:
+
 x = 16, y = 33, rule = B3_S23
 3o$2bo12bo$bo12b2o$o12b3o$o11b2obo$11b4o$10b2obo$bo7bobob2o$8b3o$7bob
 2o$6b2obo$5b4o$4b4o$3b4o$2b2o$b4o2$b2o2b4o2b2o2bo$o2b2o2b2o$b3o2bo2b2o
