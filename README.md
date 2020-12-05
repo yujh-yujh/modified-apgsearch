@@ -1,6 +1,5 @@
 Note: these scripts need python 2.x and golly.
 
-blocksoup: Don't search B3aijknqr/S2acekn3aeijnqr - B3acijknqry4eijknqrz5aceiy6acein78/S234ceijknyz5acejkqry6ceikn78(I don't know why the xq14 cause such a big problem)
 
 symmestries:
 
