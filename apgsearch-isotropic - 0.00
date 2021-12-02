@@ -13323,7 +13323,7 @@ def apg_main():
     if not upload:
         rootstring = g.getstring("What seed to use for this search (make this unique)?", datetime.datetime.now().isoformat()+"")
     rulestring = g.getstring("Which rule to use?", "B3/S23")
-    symmstring = g.getstring("What symmetries to use?", 'AB_D2_x_skewgutter_Test')
+    symmstring = g.getstring("What symmetries to use?", 'C1')
     pseudo = False
     payoshakey = g.getstring("Please enter your key (visit "+get_server_address()+"/payosha256 in your browser).", "#anon") if upload else None
     if not upload:
